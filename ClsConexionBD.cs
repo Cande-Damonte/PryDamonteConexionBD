@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
+using System.Windows.Forms;
 using System.Data.OleDb;
 
 namespace PryDamonteConexionBD
@@ -41,7 +42,29 @@ namespace PryDamonteConexionBD
             }
         }
     }
+
+   /* public void Conectar()
+    {
+        using (SqlConnection conexion = new SqlConnection(connectionString))
+        {
+            try
+            {
+                ConnectionState.Open(); ;
+                MessageBox.Show("✅ Conexión exitosa a la base de datos.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("❌ Error al conectar: " + ex.Message);
+            }
+
+            
+        }
+    }*/
+
+
 }
+
+
             
 
         // class Program
@@ -66,4 +89,5 @@ namespace PryDamonteConexionBD
         //  }
         // }
         //}
+
 
